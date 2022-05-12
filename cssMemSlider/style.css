@@ -2,10 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 }
 
 body {
-  background-color: #000;
+  background-color: rgb(28, 7, 7);
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   height: 100vh;
@@ -14,22 +17,28 @@ body {
 .main {
   margin: 0 auto;
   height: 100%;
-  background-color: darkslategray;
+  width: 35rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 .slider {
-  background-color: aquamarine;
   width: 35rem;
   height: 25rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 10px 2px rgb(219, 61, 61);
+  -moz-box-shadow: 0px 5px 10px 2px rgb(219, 61, 61);
+  box-shadow: 0px 5px 10px 2px rgb(219, 61, 61);
 }
 .slides {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  overflow: hidden;
 }
 .slide {
   transform-origin: center center;
@@ -38,7 +47,23 @@ body {
 img {
   width: 35rem;
   height: 25rem;
+  border-radius: 1rem;
 }
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+	height: 3rem;
+	width: 3rem;
+}
+
+
 .first-slide {
 }
 .second-slide {
@@ -47,5 +72,15 @@ img {
 }
 .fourth-slide {
 }
-.footer {
+.controls {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.control {
+  height: 1.5rem;
+	width: 1.5rem;
+  border-radius: 50%;
+  border: 5px solid #fff;
 }
