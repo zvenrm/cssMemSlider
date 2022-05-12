@@ -12,31 +12,32 @@
 </head>
 <body>
   <main class="main">
+    
     <div class="slider">
+      <input type="radio" name="point" id="slide1" checked>
+      <input type="radio" name="point" id="slide2">
+      <input type="radio" name="point" id="slide3">
+      <input type="radio" name="point" id="slide4">
       <div class="slides">
-        <div class="slide first-slide">
+        <div class="slide" id="first-slide">
           <img src="./assets/images/1.jpg" alt="memes">
         </div>
-        <div class="slide second-slide">
+        <div class="slide" id="second-slide">
           <img src="./assets/images/2.jpg" alt="memes">
         </div>
-        <div class="slide third-slide">
+        <div class="slide" id="third-slide">
           <img src="./assets/images/3.jpg" alt="memes">
         </div>
-        <div class="slide fourth-slide">
+        <div class="slide" id="fourth-slide">
           <img src="./assets/images/4.jpg" alt="memes">
         </div>
       </div>
-    </div>
-    <input type="radio" name="point" id="slide1" checked>
-    <input type="radio" name="point" id="slide2">
-    <input type="radio" name="point" id="slide3">
-    <input type="radio" name="point" id="slide4">
-    <div class="controls">
-      <label for="slide1"><span class="control"></span></label>
-      <label for="slide2"><span class="control"></span></label>
-      <label for="slide3"><span class="control"></span></label>
-      <label for="slide4"><span class="control"></span></label>
+      <div class="controls">
+        <label for="slide1"><span class="control"></span></label>
+        <label for="slide2"><span class="control"></span></label>
+        <label for="slide3"><span class="control"></span></label>
+        <label for="slide4"><span class="control"></span></label>
+      </div>
     </div>
   </main>
 </body>
