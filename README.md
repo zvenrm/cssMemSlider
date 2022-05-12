@@ -1,0 +1,2 @@
+# cssMemSlider
+pure CSS slider
