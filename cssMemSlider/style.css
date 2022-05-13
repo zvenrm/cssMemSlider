@@ -81,7 +81,9 @@ label:hover .control {
 }
 .slide-text {
   flex-shrink: 0;
-  width: 21rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
   transition: 0.5s;
 }
 
@@ -150,4 +152,35 @@ label:hover .control {
   -webkit-box-shadow: 0px 10px 20px 2px rgb(21, 0, 255);
   -moz-box-shadow: 0px 10px 20px 2px rgb(21, 0, 255);
   box-shadow: 0px 10px 20px 2px rgb(21, 0, 255);
+}
+
+@media (max-width: 767px) {
+  .main{
+    width: 80vw;
+  }
+
+  .slider{
+    width: 80vw;
+    height: 60vw;
+  }
+
+  img {
+    width: 80vw;
+    height: 60vw;
+  }
+
+  .slider-footer{
+    flex-direction: column;
+  }
+
+  .slider-text{
+    order: 1;
+    width: 100%;
+  }
+
+  .controls {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+  }
 }
