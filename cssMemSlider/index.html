@@ -12,12 +12,11 @@
 </head>
 <body>
   <main class="main">
-    
+    <input type="radio" name="point" id="slide1" checked>
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <input type="radio" name="point" id="slide4">
     <div class="slider">
-      <input type="radio" name="point" id="slide1" checked>
-      <input type="radio" name="point" id="slide2">
-      <input type="radio" name="point" id="slide3">
-      <input type="radio" name="point" id="slide4">
       <div class="slides">
         <div class="slide" id="first-slide">
           <img src="./assets/images/1.jpg" alt="memes">
@@ -32,6 +31,16 @@
           <img src="./assets/images/4.jpg" alt="memes">
         </div>
       </div>
+    </div>
+    <div class="slider-footer">
+      <div class="slider-text">
+        <div class="slider-text__slides">
+          <p class="slide-text">когда из магазинов пропала рыба.</p>
+          <p class="slide-text">зефир: *существует*<br>российские сми:</p>
+          <p class="slide-text">когда весь такой задумчивый сидишь в поезде и размышляешь над тем, почему вы едете поперёк.</p>
+          <p class="slide-text">«спящая венера». джорджоне, 1508-1510 г.</p>
+        </div>
+      </div>
       <div class="controls">
         <label for="slide1"><span class="control"></span></label>
         <label for="slide2"><span class="control"></span></label>
@@ -39,6 +48,7 @@
         <label for="slide4"><span class="control"></span></label>
       </div>
     </div>
+    
   </main>
 </body>
 </html>
