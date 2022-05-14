@@ -63,6 +63,10 @@ label:hover .control {
   border: 5px solid rgba(255,255,255);
 }
 
+label:active .control {
+  transform: scale(0.85);
+}
+
 .slider-footer{
   width: 100%;
   display: flex;
